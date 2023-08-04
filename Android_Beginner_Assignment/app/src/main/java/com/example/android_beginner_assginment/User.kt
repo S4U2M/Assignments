@@ -1,3 +1,6 @@
 package com.example.android_beginner_assginment
 
-data class User(var id:String, var password:String, var name:String)
+import java.io.Serializable
+
+data class User(val id:String, val password:String, val name:String,val age:String, var gender:String, var MBTI:String,var hobby:String) :
+    Serializable
